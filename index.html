@@ -8,10 +8,12 @@
             var Words = [
                 "Soup is bad imo",
                 "RagingGam0r",
-                (document.URL).replace("index.html", "") + "secret"
+                (document.URL).replace("index.html", "").replace("https://", "").replace("http://", "").replace(":5500", "") + "secret"
             ]
 
-            async function NameChangeLoop(Word) {
+            async function NameChangeLoop(Words) {
+                var Word = Words[Math.floor(Math.random() * Words.length)];
+                console.log(Word)
                 for (var i = 0; i < Word.length+1; i++) {
                     await timer(250)
                     document.title = Word.substring(0, i)
@@ -20,10 +22,10 @@
                     await timer(250)
                     document.title = Word.substring(0, i)
                 }
-                NameChangeLoop(Word)
+                NameChangeLoop(Words)
             }
 
-            NameChangeLoop("Soup is bad imo")
+            NameChangeLoop(Words)
             
         </script> <!-- This changes the titles name constantly -->
     </head>
