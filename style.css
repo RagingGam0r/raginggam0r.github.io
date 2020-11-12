@@ -74,7 +74,7 @@ main {
 }
 
 .nav-link:focus {
-    transform: translate(999px, 0px); 
+    transform: translate(1000px, 0px); 
     transition-duration: var(--transition-speed);
 }
 
