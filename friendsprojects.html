@@ -68,7 +68,7 @@
                     </a>
                 </li>
             
-                <li class="nav-item" id="projectButton">
+                <li class="nav-item" id="friendsButton">
                     <a href="#" class="nav-link">
                         <svg
                             aria-hidden="true"
@@ -97,7 +97,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item" id="friendsButton">
+                <li class="nav-item" id="projectButton">
                     <a href="#" class="nav-link">
                         <svg
                             aria-hidden="true"
@@ -122,7 +122,7 @@
                             ></path>
                             </g>
                         </svg>
-                        <span class="link-text">Projects by friends</span>
+                        <span class="link-text">Personal Projects</span>
                     </a>
                 </li>
             
@@ -211,10 +211,10 @@
         <script>
             // this is a dirty workaround to get clicking to work properly
             document.getElementById('projectButton').onclick = function() {
-                Redirect("/index.html", 250)
+                Redirect("/projects.html", 250)
             };
             document.getElementById('friendsButton').onclick = function() {
-                Redirect("/friendsprojects.html", 250)
+                Redirect("/index.html", 250)
             };
             document.getElementById('homeButton').onclick = function() {
                 Redirect("/index.html", 250)
@@ -222,7 +222,7 @@
             
         </script>
         <main>
-            Yes these are my projects.
+            Yes these are my friends projects.
         </main>
     </body>
 </html>
