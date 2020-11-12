@@ -73,6 +73,11 @@ main {
     color: var(--text-secondary);
 }
 
+.nav-link:focus {
+    transform: translate(999px, 0px); 
+    transition-duration: var(--transition-speed);
+}
+
 .link-text {
     display: none;
     margin-left: 1rem;
@@ -127,6 +132,8 @@ main {
 .navbar:hover .logo svg {
     transform: rotate(-180deg);
 }
+
+
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
