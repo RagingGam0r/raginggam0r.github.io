@@ -67,15 +67,15 @@ main {
     transition: var(--transition-speed);
 }
 
+.nav-link:focus {
+    transform: translate(1000px, 0px); 
+    transition-duration: var(--transition-speed);
+}
+
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
-}
-
-.nav-link:focus {
-    transform: translate(1000px, 0px); 
-    transition-duration: var(--transition-speed);
 }
 
 .link-text {
