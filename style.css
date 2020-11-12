@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -33,6 +33,7 @@ main {
 }
 
 .navbar {
+    font-family: 'Open Sans';
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
@@ -40,6 +41,7 @@ main {
 }
 
 .navbar-nav {
+    font-family: 'Open Sans';
     list-style: none;
     padding: 0;
     margin: 0;
@@ -51,6 +53,7 @@ main {
 
 .nav-item {
     width: 100%;
+    font-family: 'Open Sans';
 }
 
 .nav-item:last-child {
@@ -63,6 +66,7 @@ main {
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
+    font-family: 'Open Sans';
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
 }
@@ -78,16 +82,39 @@ main {
     color: var(--text-secondary);
 }
 
-.link-text {
-    display: none;
-    margin-left: 1rem;
-    font-size: 1.5rem;
-}
-
 .nav-link svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
+}
+
+.nav-link-no {
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link-no:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.nav-link-no svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .fa-primary {
