@@ -1,0 +1,86 @@
+html, body {	
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #15497b;
+	font-family: 'Comfortaa', sans-serif;
+	background-color: #f3f3f3;
+	}
+	
+#container {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+#polaroid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-image: url("images/pw_polaroids.jpg");
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-origin:content-box;
+	padding: 15px 0 65px 0;
+}
+
+#inner_stuff_idk {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 25x;
+	padding: 18px 12px;
+	box-sizing: border-box;
+}
+
+
+#social {
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+}
+	
+#social a {
+	display: inline-block;
+	text-decoration: none;
+	color: #15497b;
+	transition: all 200ms ease-in;
+}
+	
+#social a:hover {
+	transform: scale(1.35);
+}
+
+#social a+a {
+	margin-left:20px;
+}
+
+#footer {
+	position:absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	padding: 18px 12px;
+	box-sizing: border-box;
+}
+
+#footer a {
+	color: #15497b;
+	display: inline-block;
+	text-decoration: none;
+}
